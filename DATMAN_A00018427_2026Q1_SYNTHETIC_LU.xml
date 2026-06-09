@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AIFReporting xmlns="urn:esma:xsd:AIFReporting"
+              CreationDateAndTime="2014-12-01T00:00:00"
+              ReportingMemberState="FR">
+  <FilingType>INIT</FilingType>
+  <ReportingPeriodType>Q4</ReportingPeriodType>
+  <ReportingYear>2014</ReportingYear>
+  <PeriodStart>2014-10-01</PeriodStart>
+  <PeriodEnd>2014-12-31</PeriodEnd>
+  <AIFMRecord>
+    <AIFMName>AIFM 1</AIFMName>
+    <AIFMNationalCode>474286</AIFMNationalCode>
+    <AIFMIdentifierLEI>549300TESTLEI000001</AIFMIdentifierLEI>
+  </AIFMRecord>
+  <AIFRecord>
+    <AIFName>AIF TEST2</AIFName>
+    <AIFNationalCode>111112</AIFNationalCode>
+    <AIFIdentifierLEI>549300TESTAIF000001</AIFIdentifierLEI>
+    <AIFDomicile>FR</AIFDomicile>
+    <Instrument>
+      <InstrumentName>Entity 1</InstrumentName>
+      <ISINInstrumentIdentification>FR0000000001</ISINInstrumentIdentification>
+    </Instrument>
+  </AIFRecord>
+</AIFReporting>

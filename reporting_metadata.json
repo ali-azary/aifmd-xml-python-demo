@@ -1,0 +1,15 @@
+file_type,tag_name,value_key
+DATMAN,ReportingPeriodType,reporting_period
+DATMAN,AIFMName,aifm_name
+DATMAN,AIFMNationalCode,aifm_id
+DATMAN,AIFMIdentifierLEI,aifm_lei
+DATMAN,AIFMIdentifierBIC,aifm_bic
+DATMAN,ReportingMemberState,member_state
+DATAIF,ReportingPeriodType,reporting_period
+DATAIF,AIFMName,aifm_name
+DATAIF,AIFMNationalCode,aifm_id
+DATAIF,AIFMIdentifierLEI,aifm_lei
+DATAIF,AIFName,aif_name
+DATAIF,AIFNationalCode,aif_code
+DATAIF,AIFIdentifierLEI,aif_lei
+DATAIF,AIFDomicile,member_state

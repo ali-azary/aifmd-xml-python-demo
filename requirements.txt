@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AIFReporting xmlns="urn:esma:xsd:AIFReporting" CreationDateAndTime="2026-06-08T23:30:00" ReportingMemberState="LU"><FilingType>INIT</FilingType>
+  <ReportingPeriodType>Q1</ReportingPeriodType>
+  <ReportingYear>2026</ReportingYear>
+  <PeriodStart>2026-01-01</PeriodStart>
+  <PeriodEnd>2026-03-31</PeriodEnd>
+  <AIFMRecord><AIFMName>LuxBridge Alternative Managers S.A.</AIFMName>
+    <AIFMNationalCode>A00018427</AIFMNationalCode>
+    <AIFMIdentifierLEI>549300LBAMTRAINING01</AIFMIdentifierLEI>
+  </AIFMRecord>
+  <AIFRecord><AIFName>LuxBridge Senior Credit Fund SCSp</AIFName>
+    <AIFNationalCode>LBSCF01</AIFNationalCode>
+    <AIFIdentifierLEI>549300LBSCFTRN000001</AIFIdentifierLEI>
+    <AIFDomicile>LU</AIFDomicile>
+    <Instrument><InstrumentName>Entity 1</InstrumentName>
+      <ISINInstrumentIdentification>LU2684F1F49C</ISINInstrumentIdentification>
+    </Instrument>
+  </AIFRecord>
+</AIFReporting>
