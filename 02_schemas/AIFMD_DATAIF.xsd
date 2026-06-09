@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:esma:xsd:AIFReporting"
+           xmlns="urn:esma:xsd:AIFReporting"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+  <xs:element name="AIFReporting">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FilingType" type="FilingTypeType"/>
+        <xs:element name="ReportingPeriodType" type="ReportingPeriodType"/>
+        <xs:element name="ReportingYear" type="xs:gYear"/>
+        <xs:element name="PeriodStart" type="xs:date"/>
+        <xs:element name="PeriodEnd" type="xs:date"/>
+        <xs:element name="AIFMRecord">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AIFMName" type="xs:string"/>
+              <xs:element name="AIFMNationalCode" type="xs:string"/>
+              <xs:element name="AIFMIdentifierLEI" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AIFRecord">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AIFName" type="xs:string"/>
+              <xs:element name="AIFNationalCode" type="xs:string"/>
+              <xs:element name="AIFIdentifierLEI" type="xs:string"/>
+              <xs:element name="AIFDomicile" type="CountryCodeType"/>
+              <xs:element name="Instrument">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="InstrumentName" type="xs:string"/>
+                    <xs:element name="ISINInstrumentIdentification" type="ISINType"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="CreationDateAndTime" type="xs:dateTime" use="required"/>
+      <xs:attribute name="ReportingMemberState" type="CountryCodeType" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="FilingTypeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="INIT"/>
+      <xs:enumeration value="AMND"/>
+      <xs:enumeration value="CANC"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ReportingPeriodType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Q1"/>
+      <xs:enumeration value="Q2"/>
+      <xs:enumeration value="Q3"/>
+      <xs:enumeration value="Q4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CountryCodeType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]{2}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ISINType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]{2}[A-Z0-9]{10}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
